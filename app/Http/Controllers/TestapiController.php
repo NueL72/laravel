@@ -21,7 +21,7 @@ public function getPosts()
         'Accept' => 'application/json'
         ]
     ]);
-    $response = $client->get('https://api.loyverse.com/v1.0/employees');
+    $response = $client->get('https://api.loyverse.com/v1.0/receipts');
 
     // Decode JSON response
     $data = json_decode($response->getBody(), true);
